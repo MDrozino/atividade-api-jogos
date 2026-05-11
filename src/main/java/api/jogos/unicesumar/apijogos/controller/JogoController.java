@@ -17,18 +17,18 @@ public class JogoController {
 
         jogos.add(new Jogo(
                 1L,
-                "Jogo inserido no código 1",
+                "The Legend of zelda",
                 "Aventura",
                 10,
-                "teste 1"
+                "Um clássico absoluto"
         ));
 
         jogos.add(new Jogo(
                 2L,
-                "Jogo inserido no código 2",
+                "FIFA 23",
                 "Esporte",
                 7,
-                "teste 2"
+                "Bom para jogar com amigos."
         ));
     }
 
