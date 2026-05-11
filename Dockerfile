@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests -Dmaven.test.skip=true
 
 CMD ["java", "-jar", "target/api-jogos-0.0.1-SNAPSHOT.jar"]
