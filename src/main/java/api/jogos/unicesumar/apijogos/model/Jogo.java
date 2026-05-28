@@ -1,5 +1,7 @@
 package api.jogos.unicesumar.apijogos.model;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -14,6 +16,8 @@ public class Jogo {
     private String tipo;
 
     @NotNull(message = "Nota obrigatória")
+    @Min(value = 0, message = "Nota mínima deve ser 0")
+    @Max(value = 10, message = "Nota máxima deve ser 10")
     private Integer nota;
 
     @NotBlank(message = "Review obrigatória")
